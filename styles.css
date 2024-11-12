@@ -311,17 +311,7 @@ footer{
     box-shadow: var(--box-shadow-sm);
 }
 
-/* --------------BEGIN ACTIVITY STYLES----------------- */
-/* -------------------------------------------------- */
-/*  
-    FOLLOW ALONG IN CLASS AND ADD YOUR STYLES AS INSTRUCTED BELOW
-*/
-/* -------------------------------------------------- */
-
 /* ------------- SECTION 2 STYLES ---------------- */
-/* Practicing the box model & seeing it in action */
-/* content, padding, borders, margin, dev tools, inline, & block elements */
-
 /* For both links in the section */
 #section2 a{
     display: block;
@@ -332,8 +322,6 @@ footer{
     width: 50%;
     box-shadow: var(--box-shadow-lg);
 }
-
-/* ADD SELECTOR AND STYLES HERE */
 
 /* For the first link in this section: */
 #section2 a:first-of-type{
@@ -388,19 +376,12 @@ footer{
 
 
 /* ------------- SECTION 3 STYLES ---------------- */
-/* Sizing with width and height */
-
-/* For the corgi graphic */
-/* 
-    TO DO: add styles to the image in this section that will:
-        - turn this into a block-level element
-        - make this display at 200px wide
-        - set the height to auto
-        - add margin to center this element
-        - add the small filter drop shadow from the CSS variables in the root
-*/
 #section3 img{
-    
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    filter: var(--filter-shadow-sm);
 }
 
 #section3 div::before{
@@ -428,23 +409,18 @@ footer{
     box-shadow: var(--box-shadow-sm);
 }
 
-/* 
-    TO DO: add styles to the after pseudo-element on the div in this section that will:
-        - add content (empty string)
-        - make this display as a block-level element
-        - make this 50px wide
-        - make this 50px tall
-        - make the background the lt-blue color
-        - turn this square div into a circle
-        - set the position to relative
-        - give this a z-index of 2
-        - move this up from its original location by 50px
-        - move this to the right from its original location by 25px
-*/
 #section3 div::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--lt-blue);
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    top: -50px;
+    left: 25px;
 }
-
-
 /* ------------- SECTION 4 STYLES ---------------- */
 /* Margin collapse and centering with margin */
 
